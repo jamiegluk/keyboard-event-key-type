@@ -4,6 +4,16 @@
 
 A simple Typescript package that contains the types of the keyboard-event-key as string-literals like: ArrowDown, ArrowUp and so on.
 
+### Fork
+
+This is a fork of [@Moh-Snoussi/keyboard-event-key-type](https://github.com/Moh-Snoussi/keyboard-event-key-type).
+
+Intellisense is fixed by applying the suggestion from [issue 1](https://github.com/Moh-Snoussi/keyboard-event-key-type/issues/1).
+
+Use the original `KeyboardEventKey` type if you wish for Intellisense autocomplete when writing the key name, but wish to accept custom keys. If you enter an invalid key name, you will not get a TS error.
+
+An additional type `KnownKeyboardEventKey` has been added. This type does not allow custom keys, meaning you will get a TS error if you write an invalid key name. This fixes [issue 3](https://github.com/Moh-Snoussi/keyboard-event-key-type/issues/3).
+
 ## Getting Started
 
 ### Installing
