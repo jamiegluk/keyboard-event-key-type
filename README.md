@@ -41,7 +41,7 @@ const invalidKey: KnownKeyboardEventKey = "InvalidKey"; //<- Error
 #### Example
 
 ```ts
-document.addEventListener("keydown", function (event) {
+document.addEventListener("keydown", (event) => {
   const actualKey = event.key as KeyboardEventKey;
   const actionKey: KeyboardEventKey = "ArrowDown"; // <- IntelliSense
   if (actualKey === actionKey) {
