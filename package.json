@@ -5,7 +5,7 @@
   "description": "Contains strings literals for the keyboard event keys",
   "main": "index.ts",
   "scripts": {
-    "build" : "tsc"
+    "build": "tsc"
   },
   "repository": {
     "url": "https://github.com/Moh-Snoussi/keyboard-event-key-type"
