@@ -24,10 +24,26 @@ npm install --save keyboard-event-key-type
 
 ### Usage
 
-```typescript
+#### `KeyboardEventKey`
+
+```ts
+const actionKey: KeyboardEventKey = "ArrowUp"; //<- IntelliSense
+const customKey: KeyboardEventKey = "CustomKey"; //<- Permitted
+```
+
+#### `KnownKeyboardEventKey`
+
+```ts
+const actionKey: KnownKeyboardEventKey = "ArrowUp"; //<- IntelliSense
+const invalidKey: KnownKeyboardEventKey = "InvalidKey"; //<- Error
+```
+
+#### Example
+
+```ts
 document.addEventListener("keydown", function (event) {
-  const actualKey = <KeyboardEventKey>event.key;
-  const actionKey: KeyboardEventKey = "ArrowDown"; // <- intellisense
+  const actualKey = event.key as KeyboardEventKey;
+  const actionKey: KeyboardEventKey = "ArrowDown"; // <- IntelliSense
   if (actualKey === actionKey) {
     // clicked !
   }
@@ -36,7 +52,7 @@ document.addEventListener("keydown", function (event) {
 
 #### IntelliSense
 
-The package mainly helps with the IDE-IntelliSense:
+The package helps with the IDE-IntelliSense: \
 ![Alt text](readme_img/IntelliSense.jpg?raw=true "IntelliSense")
 
 ## Supported types

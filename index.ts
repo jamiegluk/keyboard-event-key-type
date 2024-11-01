@@ -425,8 +425,8 @@ type CustomValueKey = string;
  * @see KeyboardEventKey
  *
  * @example
- *   const actionKey: KeyboardEventKey = "ArrowUp"; //<- IntelliSense
- *   const invalidKey: KeyboardEventKey = "InvalidKey"; //<- Error
+ *   const actionKey: KnownKeyboardEventKey = "ArrowUp"; //<- IntelliSense
+ *   const invalidKey: KnownKeyboardEventKey = "InvalidKey"; //<- Error
  */
 export declare type KnownKeyboardEventKey =
   | DeprecatedWhitespaceKey
