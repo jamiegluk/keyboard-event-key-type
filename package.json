@@ -25,5 +25,8 @@
     "Mohamed Snoussi",
     "Jamie Lievesley <jamie@jamiegl.co.uk> (https://jamiegl.co.uk)"
   ],
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
 }
