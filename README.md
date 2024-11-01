@@ -19,7 +19,7 @@ An additional type `KnownKeyboardEventKey` has been added. This type does not al
 ### Installing
 
 ```shell
-npm install --save keyboard-event-key-type
+npm install --save-dev @jamiegluk/keyboard-event-key-type
 ```
 
 ### Usage
