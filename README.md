@@ -52,8 +52,8 @@ document.addEventListener("keydown", (event) => {
 
 #### IntelliSense
 
-The package helps with the IDE-IntelliSense: \
-![Alt text](readme_img/IntelliSense.jpg?raw=true "IntelliSense")
+The package helps with IntelliSense in your IDE: \
+![Code example showing IntelliSense dropdown with a list of know keyboard keys, in VS Code](readme-intellisense.png?raw=true)
 
 ## Supported types
 
