@@ -7,8 +7,13 @@
   "scripts": {
     "build": "tsc"
   },
+  "homepage": "https://github.com/jamiegluk/keyboard-event-key-type",
+  "bugs": {
+    "url": "https://github.com/jamiegluk/keyboard-event-key-type/issues"
+  },
   "repository": {
-    "url": "https://github.com/Moh-Snoussi/keyboard-event-key-type"
+    "type": "git",
+    "url": "git+https://github.com/jamiegluk/keyboard-event-key-type.git"
   },
   "keywords": [
     "types",
