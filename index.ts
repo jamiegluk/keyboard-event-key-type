@@ -415,16 +415,20 @@ type KoreanKeyboardsOnly = "HangulMode" | "HanjaMode" | "JunjaMode";
  */
 type DeprecatedWhitespaceKey = "Spacebar";
 type SpecialValueKey = "Unidentified";
+type CustomValueKey = string;
 
 /**
  * @link https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values#editing_keys
- * The types are the standard key values that can be in event.key (KeyboardEvent.key),
+ * The types are the standard key values that can be in `event.key` (`KeyboardEvent.key`).
  *
- * usage:
- * const actionKey : KeyboardEventKey = "ArrowUp" //<- IntelliSense
- * keyboard key behaviour
+ * This version of the type is strictly typed and does not permit custom keys.
+ * @see KeyboardEventKey
+ *
+ * @example
+ *   const actionKey: KeyboardEventKey = "ArrowUp"; //<- IntelliSense
+ *   const invalidKey: KeyboardEventKey = "InvalidKey"; //<- Error
  */
-export declare type KeyboardEventKey =
+export declare type KnownKeyboardEventKey =
   | DeprecatedWhitespaceKey
   | SpecialValueKey
   | ModifierKeys
@@ -448,3 +452,18 @@ export declare type KeyboardEventKey =
   | UpperAlpha
   | LowerAlpha
   | KoreanKeyboardsOnly;
+
+/**
+ * @link https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values#editing_keys
+ * The types are the standard key values that can be in `event.key` (`KeyboardEvent.key`).
+ *
+ * This version of the type is strictly typed and does not permit custom keys.
+ * @see KeyboardEventKey
+ *
+ * @example
+ *   const actionKey: KeyboardEventKey = "ArrowUp"; //<- IntelliSense
+ *   const customKey: KeyboardEventKey = "CustomKey"; //<- Permitted
+ */
+export declare type KeyboardEventKey =
+  | KnownKeyboardEventKey
+  | ({} & CustomValueKey);
