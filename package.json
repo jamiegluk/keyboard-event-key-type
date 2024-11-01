@@ -1,9 +1,12 @@
 {
-  "name": "keyboard-event-key-type",
+  "name": "@jamiegluk/keyboard-event-key-type",
   "type": "module",
   "version": "1.6.0",
   "description": "Contains strings literals for the keyboard event keys",
   "main": "index.ts",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "build": "tsc"
   },
@@ -26,6 +29,7 @@
     "developer",
     "mozilla"
   ],
+  "author": "Jamie Lievesley <jamie@jamiegl.co.uk> (https://jamiegl.co.uk)",
   "contributors": [
     "Mohamed Snoussi",
     "Jamie Lievesley <jamie@jamiegl.co.uk> (https://jamiegl.co.uk)"
